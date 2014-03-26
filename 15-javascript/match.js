@@ -18,13 +18,11 @@ var pattern = /^(\w*):\/\/([-a-zA-Z0-9_+.]*)(\/.*)?/;
 
 var match = pattern.exec('http://deniscostadsc.com/programming/2014/02/01/login-com-curl.html');
 
-var url = {
+console.log({
     protocol: match[1],
     domain: match[2],
     path: match[3],
-};
-
-console.log(url);
+});
 
 //
 // O método test retornr um booleano caso a regex case com e string passada
