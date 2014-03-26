@@ -10,10 +10,10 @@
 #
 
 colored_echo "[^eu]rro" "casa com:"
-grep --color '[^eu]rro' lista-negada.txt
+egrep --color '[^eu]rro' lista-negada.txt
 
 echo; colored_echo "[^eu]rro" "não casa com:"
-grep -v '[^eu]rro' lista-negada.txt
+egrep -v '[^eu]rro' lista-negada.txt
 
 #
 # '[^a-z ]' e '[^[:lower:] ]'
@@ -28,14 +28,14 @@ grep -v '[^eu]rro' lista-negada.txt
 #
 
 echo; colored_echo "[^a-z ]" "casa com:"
-grep --color '[^a-z ]' lista-negada-com-intervalo.txt
+egrep --color '[^a-z ]' lista-negada-com-intervalo.txt
 
 echo; colored_echo "[^a-z ]" "não casa com:"
-grep -v '[^a-z ]' lista-negada-com-intervalo.txt
+egrep -v '[^a-z ]' lista-negada-com-intervalo.txt
 
 
 echo; colored_echo "[^[:lower:] ]" "casa com:"
-grep --color '[^[:lower:] ]' lista-negada-com-intervalo.txt
+egrep --color '[^[:lower:] ]' lista-negada-com-intervalo.txt
 
 echo; colored_echo "[^[:lower:] ]" "não casa com:"
-grep -v '[^[:lower:] ]' lista-negada-com-intervalo.txt
+egrep -v '[^[:lower:] ]' lista-negada-com-intervalo.txt

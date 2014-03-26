@@ -9,15 +9,8 @@
 # de uma letra 'b'
 #
 
-colored_echo "a\+b" "(no grep) casa com:"
-grep --color 'a\+b' mais.txt
-
-echo; colored_echo "a\+b" "(no grep) não casa com:"
-grep -v 'a\+b' mais.txt
-
-
-echo; colored_echo "a+b" "(no egrep) casa com:"
+colored_echo "a+b" "casa com:"
 egrep --color 'a+b' mais.txt
 
-echo; colored_echo "a+b" "(no egrep) não casa com:"
+echo; colored_echo "a+b" "não casa com:"
 egrep -v 'a+b' mais.txt

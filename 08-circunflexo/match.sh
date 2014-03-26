@@ -10,7 +10,7 @@
 #
 
 colored_echo "^d" "casa com:"
-grep --color '^d' circunflexo.txt
+egrep --color '^d' circunflexo.txt
 
 echo; colored_echo "^d" "não casa com:"
-grep -v '^d' circunflexo.txt
+egrep -v '^d' circunflexo.txt

@@ -10,7 +10,7 @@
 #
 
 colored_echo "a*b" "casa com:"
-grep --color 'a*b' asterisco.txt # shellcheck disable=SC2022
+egrep --color 'a*b' asterisco.txt
 
 echo; colored_echo "a*b" "não casa com:"
-grep -v 'a*b' asterisco.txt
+egrep -v 'a*b' asterisco.txt

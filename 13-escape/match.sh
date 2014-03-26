@@ -10,7 +10,7 @@
 #
 
 colored_echo "amor\." "casa com:"
-grep --color 'amor\.' escape.txt
+egrep --color 'amor\.' escape.txt
 
 echo; colored_echo "amor\." "não casa com:"
-grep -v 'amor\.' escape.txt
+egrep -v 'amor\.' escape.txt

@@ -9,7 +9,7 @@
 #
 
 colored_echo 'do$' "casa com:"
-grep --color 'do$' cifrao.txt
+egrep --color 'do$' cifrao.txt
 
 echo; colored_echo 'do$' "não casa com:"
-grep -v 'do$' cifrao.txt
+egrep -v 'do$' cifrao.txt
