@@ -9,6 +9,8 @@
 //
 // var pattern = new RegExp("^(\w*):\/\/([-a-zA-Z0-9_+.]*)(\/.*)?");
 //
+// Dessa forma é possível criar expressões regulares em tempo de execução.
+//
 
 var pattern = /^(\w*):\/\/([-a-zA-Z0-9_+.]*)(\/.*)?/;
 
@@ -16,7 +18,9 @@ var pattern = /^(\w*):\/\/([-a-zA-Z0-9_+.]*)(\/.*)?/;
 // match retorna um array com informações sobre o resultado do casamento.
 //
 
-var match = pattern.exec('http://deniscostadsc.com/programming/2014/02/01/login-com-curl.html');
+var url = 'http://deniscostadsc.com/programming/2014/02/01/login-com-curl.html';
+
+var match = pattern.exec(url);
 
 console.log({
     protocol: match[1],
@@ -25,11 +29,11 @@ console.log({
 });
 
 //
-// O método test retornr um booleano caso a regex case com e string passada
+// O método test retorna um booleano caso a regex case com e string passada
 // como parâmetro.
 //
 
-if (pattern.test('http://deniscostadsc.com/programming/2014/02/01/login-com-curl.html')){
+if (pattern.test(url)){
     console.log('É uma url!');
 } else {
     console.log('Não sei o que é isso. 8(');
@@ -38,8 +42,6 @@ if (pattern.test('http://deniscostadsc.com/programming/2014/02/01/login-com-curl
 //
 // É possível usar regex em javascript nos métodos de string.
 //
-
-var url = 'http://deniscostadsc.com/programming/2014/02/01/login-com-curl.html';
 
 match = url.match(pattern);
 
