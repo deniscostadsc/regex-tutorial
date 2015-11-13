@@ -18,12 +18,12 @@ egrep -v '[eu]rro' lista.txt
 #
 # '[a-z ]' e '[[:lower:] ]'
 #
-# Essas duas regexes tem o mesmo efeito. Elas casam com palavras que tenham um
-# ou uma letra minúscula ou um espaço. Uma outra forma, mais verborrágica e
+# Essas duas 'regexes' tem o mesmo efeito. Elas casam com palavras que tenham
+# um ou uma letra minúscula ou um espaço. Uma outra forma, mais verborrágica e
 # menos elegante, de traduzir essa regex seria '[abcdefghijklmnopqrstuvwxyz ]'.
 #
 # A notação [:lower:] e suas similares são comuns em aplicativos unix, como
-# grep, mas raramente são encontradas em linguagens de programação.
+# grep e egrep, mas raramente são encontradas em linguagens de programação.
 #
 
 echo; colored_echo "[a-z ]" "casa com:"
