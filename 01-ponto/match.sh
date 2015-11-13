@@ -6,7 +6,7 @@
 # '.ato'
 #
 # Essa regex casa com uma palavra que tenha um caractere qualquer seguido de
-# 'ato'. Exemplo: casa 'gato', 'mato' e  'sapato'.
+# 'ato'. Exemplo: casa 'gato', 'mato' e 'sapato'.
 #
 
 colored_echo ".ato" "casa com:"
