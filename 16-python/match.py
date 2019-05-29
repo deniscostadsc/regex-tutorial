@@ -46,11 +46,11 @@ time_str_pattern = r'([0-1]\d|2[0-3])(:[0-5]\d){2}'
 # comportamento das regex. são ele:
 #
 # re.DEBUG
+# re.A ou re.ASCII
 # re.I ou re.IGNORECASE
 # re.L ou re.LOCALE
 # re.M ou re.MULTILINE
 # re.S ou re.DOTALL
-# re.U ou re.UNICODE
 # re.X ou re.VERBOSE
 #
 # A regex a seguir case com 'denis', 'Denis' e 'DENIS'.
